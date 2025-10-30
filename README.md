@@ -162,27 +162,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Ensure all files are in the correct structure
 
 ### Getting Help
-- Create an [Issue](https://github.com/yourusername/listenup-tts/issues)
+- Create an [Issue](https://github.com/Mahmud-Mahi/ListenUp/issues)
 - Check existing issues for solutions
 - Describe your problem with steps to reproduce
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/yourusername/listenup-tts/issues) page
-2. Create a new issue with detailed information
-3. Include Chrome version and steps to reproduce
-
-## 🚀 Roadmap
-
-- [ ] Chrome Web Store publication
-- [ ] Voice selection options
-- [ ] Custom highlight colors
-- [ ] Reading progress saving
-- [ ] Export audio feature
-- [ ] Multi-language support
-- [ ] Firefox extension version
 
 ---
 

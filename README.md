@@ -86,8 +86,8 @@ listenup-tts/
 ### Building from Source
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/listenup-tts.git
-   cd listenup-tts
+   git clone https://github.com/Mahmud-Mahi/ListenUp.git
+   cd ListenUp
    ```
 
 2. Load in Chrome:

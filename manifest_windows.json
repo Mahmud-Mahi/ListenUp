@@ -1,0 +1,58 @@
+{
+  "manifest_version": 3,
+  "name": "ListenUp",
+  "version": "1.0",
+  "description": "Listen to any selected text or AI chat responses with ease.",
+
+  "permissions": [
+    "contextMenus",
+    "scripting",
+    "activeTab",
+    "offscreen",
+    "storage",
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+   "icons": {
+    "16": "icons/icon-16.png",
+    "24": "icons/icon-24.png",
+    "32": "icons/icon-32.png",
+    "64": "icons/icon-64.png",
+    "128": "icons/icon-128.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "action": {
+    "default_title": "ListenUp",
+    "default_icon": "icons/icon-24.png",
+    "default_popup": "popup.htm"
+  },
+
+  "commands": {
+    "read-text": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S"
+      },
+      "description": "Read the selected text aloud"
+    },
+    "stop-reading": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X"
+      },
+      "description": "Stop reading the text aloud"
+    },
+    "toggle-playback": {
+      "suggested_key": {
+        "default": "Alt+X"
+      },
+      "description": "Toggle play/pause reading"
+    }
+  }
+}

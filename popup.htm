@@ -5,7 +5,7 @@
     <title>Text-to-Speech Controls</title>
     <style>
         body {
-            width: 220px;
+            width: 300px;
             padding: 15px;
             background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
             color: #e0e0e0;
@@ -14,9 +14,14 @@
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
             margin: 0;
         }
-        button {
-            width: 100%;
+        .control-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
             margin: 8px 0;
+        }
+        button {
+            width: 200px;
             padding: 12px;
             font-size: 14px;
             font-weight: 500;
@@ -37,6 +42,14 @@
             transform: translateY(0);
             box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
         }
+        .shortcut-badge {
+            font-size: 10px;
+            color: #aaa;
+            background: #333;
+            padding: 4px 6px;
+            border-radius: 4px;
+            white-space: nowrap;
+        }
 
         .speed-control {
             margin: 20px 0;
@@ -56,12 +69,26 @@
             border-radius: 5px;
             outline: none;
         }
+        .speed-value {
+            margin-top: 12px;
+            font-size: 14px;
+            color: #ffffff;
+        }
     </style>
 </head>
 <body>
-    <button id="startBtn">Start Reading Text</button>
-    <button id="stopBtn">Stop Reading</button>
-    <button id="toggleBtn">Pause</button>
+    <div class="control-group">
+        <button id="startBtn">Start Reading Text</button>
+        <span id="shortcut-read-text" class="shortcut-badge"></span>
+    </div>
+    <div class="control-group">
+        <button id="stopBtn">Stop Reading</button>
+        <span id="shortcut-stop-reading" class="shortcut-badge"></span>
+    </div>
+    <div class="control-group">
+        <button id="toggleBtn">Pause</button>
+        <span id="shortcut-toggle-playback" class="shortcut-badge"></span>
+    </div>
     <div class="speed-control">
         <label for="speedSlider">Playback Speed:</label>
         <input type="range" id="speedSlider" min="0.5" max="2.0" step="0.1" value="1.0">

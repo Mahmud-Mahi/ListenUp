@@ -32,25 +32,28 @@
   "action": {
     "default_title": "ListenUp",
     "default_icon": "icons/icon-24.png",
-    "default_popup": "popup.html"
+    "default_popup": "popup.htm"
   },
 
   "commands": {
     "read-text": {
       "suggested_key": {
-        "default": "Ctrl+Shift+S"
+        "default": "Ctrl+Shift+S",
+        "windows": "Ctrl+Shift+Y"
       },
       "description": "Read the selected text aloud"
     },
     "stop-reading": {
       "suggested_key": {
-        "default": "Ctrl+Shift+X"
+        "default": "Ctrl+Shift+X",
+        "windows": "Ctrl+Shift+U"
       },
       "description": "Stop reading the text aloud"
     },
     "toggle-playback": {
       "suggested_key": {
-        "default": "Alt+X"
+        "default": "Alt+X",
+        "windows": "Ctrl+Shift+E"
       },
       "description": "Toggle play/pause reading"
     }
